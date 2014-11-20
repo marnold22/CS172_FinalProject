@@ -1,10 +1,10 @@
 #include <iostream>
-#include "Screen.h"
+#include "GameController.h"
 using namespace std;
 
 int main()
 {
-	Screen mainScreen;
+	GameController gameController;
 
 	return 0;
 }
