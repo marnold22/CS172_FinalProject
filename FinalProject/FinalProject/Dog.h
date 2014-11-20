@@ -1,20 +1,12 @@
 #ifndef _DOG_
 #define _DOG_
 
+#include "Actor.h"
 #include <iostream>
 using namespace std;
 
-class Dog
+class Dog : public Actor
 {
-private:
-	int xPos;
-	int yPos;
-
-public:
-	int getXPos();
-	int getYPos();
-	int setXPos(int newX);
-	int setYPos(int newY);
 
 };
 

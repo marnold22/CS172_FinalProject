@@ -1,20 +1,12 @@
 #ifndef _BALL_
 #define _BALL_
 
+#include "Actor.h"
 #include <iostream>
 using namespace std;
 
-class Ball
+class Ball : public Actor
 {
-private:
-	int xPos;
-	int yPos;
-
-public:
-	int getXPos();
-	int getYPos();
-	int setXPos(int newX);
-	int setYPos(int newY);
 
 };
 
