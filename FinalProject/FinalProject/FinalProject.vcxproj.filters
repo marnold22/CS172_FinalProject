@@ -27,7 +27,11 @@
     <ClCompile Include="Actor.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+<<<<<<< HEAD
     <ClCompile Include="GameController.cpp">
+=======
+    <ClCompile Include="Screen.cpp">
+>>>>>>> origin/master
       <Filter>Resource Files</Filter>
     </ClCompile>
   </ItemGroup>
