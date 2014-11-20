@@ -7,12 +7,14 @@ using namespace std;
 class Dog
 {
 private:
-	int xpos;
-	int ypos;
+	int xPos;
+	int yPos;
 
 public:
 	int getXPos();
 	int getYPos();
+	int setXPos(int newX);
+	int setYPos(int newY);
 
 };
 
