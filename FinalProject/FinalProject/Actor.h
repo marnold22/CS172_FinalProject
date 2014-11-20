@@ -13,8 +13,8 @@ private:
 public:
 	int getXPos();
 	int getYPos();
-	int setXPos(int newX);
-	int setYPos(int newY);
+	void setXPos(int newX);
+	void setYPos(int newY);
 
 };
 

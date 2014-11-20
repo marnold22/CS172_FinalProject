@@ -1,8 +1,10 @@
 #include <iostream>
+#include "Screen.h"
 using namespace std;
 
 int main()
 {
-	return 0;
+	Screen mainScreen;
 
+	return 0;
 }
