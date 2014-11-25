@@ -14,6 +14,10 @@ void GameController::readFile()
 	}
 	else
 	{
-		
+		string word;
+		while (cin >> word)
+		{
+
+		}
 	}
 }

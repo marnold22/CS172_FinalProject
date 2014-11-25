@@ -6,6 +6,7 @@ int main()
 {
 	GameController gameController;
 	gameController.screen.update();
+	gameController.readFile();
 
 	return 0;
 }

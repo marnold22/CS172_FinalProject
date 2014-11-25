@@ -43,4 +43,7 @@
       <UniqueIdentifier>{07c3175e-9844-4bf9-98a4-614bbc3fc944}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="example.txt" />
+  </ItemGroup>
 </Project>
