@@ -1,4 +1,6 @@
 #include "GameController.h"
+#include <vector>
+#include <string>
 
 void GameController::readFile()
 {
@@ -15,9 +17,10 @@ void GameController::readFile()
 	else
 	{
 		string word;
-		while (cin >> word)
+		vector<string> words;
+		while (userFile >> word)
 		{
-
+			words.push_back(word);
 		}
 	}
 }
