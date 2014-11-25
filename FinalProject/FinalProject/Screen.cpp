@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-void update() {
+void Screen::update() {
 	
 	cout << "  _______________________________________________________________________________";
 	cout << " |       |       |       |       |       |       |       |       |       |       |";

@@ -8,12 +8,9 @@ using namespace std;
 
 class GameController
 {
-private:
-	Screen screen;
-
 public:
+	Screen screen;
 	void readFile();
-
 };
 
 #endif _GAMECONTROLLER_

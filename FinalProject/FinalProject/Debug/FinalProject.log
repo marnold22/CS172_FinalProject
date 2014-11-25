@@ -1,9 +1,8 @@
-﻿Build started 11/20/2014 1:51:05 PM.
+﻿Build started 11/25/2014 1:54:53 PM.
      1>Project "C:\Users\pherbert17\Desktop\CS172_FinalProject\FinalProject\FinalProject\FinalProject.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt GameController.cpp Main.cpp
          Main.cpp
-     1>c:\users\pherbert17\desktop\cs172_finalproject\finalproject\finalproject\main.cpp(7): warning C4101: 'gameController' : unreferenced local variable
          GameController.cpp
          Generating Code...
        Link:
@@ -12,9 +11,10 @@
          Debug\GameController.obj
          Debug\Main.obj
          Debug\Dog.obj
+         Debug\Screen.obj
          FinalProject.vcxproj -> C:\Users\pherbert17\Desktop\CS172_FinalProject\FinalProject\Debug\FinalProject.exe
      1>Done Building Project "C:\Users\pherbert17\Desktop\CS172_FinalProject\FinalProject\FinalProject\FinalProject.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:01.97
+Time Elapsed 00:00:00.92
