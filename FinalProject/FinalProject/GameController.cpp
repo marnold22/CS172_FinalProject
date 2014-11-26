@@ -22,5 +22,13 @@ void GameController::readFile()
 		{
 			words.push_back(word);
 		}
+
+		//use to display the vector words if troubleshooting
+		/*
+		for (int i = 0; i < words.size(); i++)
+		{
+		cout << words[i];
+		}
+		*/
 	}
 }
