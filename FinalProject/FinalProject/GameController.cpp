@@ -1,5 +1,7 @@
 #include "GameController.h"
 #include <vector>
+#include <thread>
+#include <chrono>
 #include <string>
 
 void GameController::readFile()
@@ -45,8 +47,35 @@ void GameController::runInstructions(const vector<string>& words)
 		{
 			if (words[i + 1] == "dog")
 			{
-				cout << "Moved dog. " << endl;
-				i += 3;
+				if (words[i + 2] == "up")
+				{
+					cout << "Moved dog up!" << endl;
+					i += 3;
+					std::this_thread::sleep_for(std::chrono::seconds(2)); //wait 2 seconds
+				}
+				else if (words[i + 2] == "down")
+				{
+					cout << "Moved dog down!" << endl;
+					i += 3;
+					std::this_thread::sleep_for(std::chrono::seconds(2)); //wait 2 seconds
+				}
+				else if (words[i + 2] == "left")
+				{
+					cout << "Moved dog left!" << endl;
+					i += 3;
+					std::this_thread::sleep_for(std::chrono::seconds(2)); //wait 2 seconds
+				}
+				else if (words[i + 2] == "right")
+				{
+					cout << "Moved dog right!" << endl;
+					i += 3;
+					std::this_thread::sleep_for(std::chrono::seconds(2)); //wait 2 seconds
+				}
+				else
+				{
+					cout << "Could not understand command." << endl;
+					i++;
+				}
 			}
 			else
 			{

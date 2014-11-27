@@ -1,2 +1,5 @@
 move dog left
 move dog right
+move dog up
+ds ret asdkl
+move dog down
