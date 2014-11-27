@@ -27,8 +27,37 @@ void GameController::readFile()
 		/*
 		for (int i = 0; i < words.size(); i++)
 		{
-		cout << words[i];
+		cout << i << ". " << words[i] << " ";
 		}
+		cout << endl;
 		*/
+
+		runInstructions(words);
+	}
+}
+
+void GameController::runInstructions(const vector<string>& words)
+{
+	int i(0);
+	while (i < words.size())
+	{
+		if (words[i] == "move")
+		{
+			if (words[i + 1] == "dog")
+			{
+				cout << "Moved dog. " << endl;
+				i += 3;
+			}
+			else
+			{
+				cout << "Could not understand command." << endl;
+				i++;
+			}
+		}
+		else
+		{
+			cout << "Could not understand command. " << endl;
+			i++;
+		}
 	}
 }
