@@ -11,6 +11,7 @@ class Screen
 private:
 	Dog dog;
 	Ball ball;
+	int coord[10][10];
 
 public:
 	void update();
