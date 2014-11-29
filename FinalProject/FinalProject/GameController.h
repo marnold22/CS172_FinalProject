@@ -9,6 +9,8 @@ using namespace std;
 
 class GameController
 {
+private:
+	int waitTime = 900;
 public:
 	Screen screen;
 	void readFile();

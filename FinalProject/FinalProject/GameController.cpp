@@ -49,27 +49,39 @@ void GameController::runInstructions(const vector<string>& words)
 			{
 				if (words[i + 2] == "up")
 				{
-					cout << "Moved dog up!" << endl;
+					if (screen.dog.getYPos() != 9 && !screen.isOverlap(screen.dog.getXPos(), screen.dog.getYPos() + 1, screen.ball.getXPos(), screen.ball.getYPos()))
+						screen.dog.setYPos(screen.dog.getYPos() + 1);
 					i += 3;
-					std::this_thread::sleep_for(std::chrono::seconds(2)); //wait 2 seconds
+					screen.update();
+					cout << "move dog up" << endl;
+					std::this_thread::sleep_for(std::chrono::milliseconds(waitTime)); //wait
 				}
 				else if (words[i + 2] == "down")
 				{
-					cout << "Moved dog down!" << endl;
+					if (screen.dog.getYPos() != 0 && !screen.isOverlap(screen.dog.getXPos(), screen.dog.getYPos() - 1, screen.ball.getXPos(), screen.ball.getYPos()))
+						screen.dog.setYPos(screen.dog.getYPos() - 1);
 					i += 3;
-					std::this_thread::sleep_for(std::chrono::seconds(2)); //wait 2 seconds
+					screen.update();
+					cout << "move dog down" << endl;
+					std::this_thread::sleep_for(std::chrono::milliseconds(waitTime)); //wait
 				}
 				else if (words[i + 2] == "left")
 				{
-					cout << "Moved dog left!" << endl;
+					if (screen.dog.getXPos() != 0 && !screen.isOverlap(screen.dog.getXPos() - 1, screen.dog.getYPos(), screen.ball.getXPos(), screen.ball.getYPos()))
+						screen.dog.setXPos(screen.dog.getXPos() - 1);
 					i += 3;
-					std::this_thread::sleep_for(std::chrono::seconds(2)); //wait 2 seconds
+					screen.update();
+					cout << "move dog left" << endl;
+					std::this_thread::sleep_for(std::chrono::milliseconds(waitTime)); //wait
 				}
 				else if (words[i + 2] == "right")
 				{
-					cout << "Moved dog right!" << endl;
+					if (screen.dog.getXPos() != 9 && !screen.isOverlap(screen.dog.getXPos() + 1, screen.dog.getYPos(), screen.ball.getXPos(), screen.ball.getYPos()))
+						screen.dog.setXPos(screen.dog.getXPos() + 1);
 					i += 3;
-					std::this_thread::sleep_for(std::chrono::seconds(2)); //wait 2 seconds
+					screen.update();
+					cout << "move dog right" << endl;
+					std::this_thread::sleep_for(std::chrono::milliseconds(waitTime)); //wait
 				}
 				else
 				{

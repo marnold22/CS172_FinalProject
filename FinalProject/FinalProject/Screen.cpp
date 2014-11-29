@@ -63,3 +63,10 @@ void Screen::update()
 	cout << "  |_____|_____|_____|_____|_____|_____|_____|_____|_____|_____|" << endl;
 	cout << "     0     1     2     3     4     5     6     7     8     9  " << endl;
 }
+
+bool Screen::isOverlap(int x1, int y1, int x2, int y2)
+{
+	if (x1 == x2 && y1 == y2)
+		return true;
+	return false;
+}
