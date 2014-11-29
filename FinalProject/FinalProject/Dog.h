@@ -7,7 +7,7 @@ using namespace std;
 
 class Dog : public Actor
 {
-	
+
 };
 
 #endif _DOG_

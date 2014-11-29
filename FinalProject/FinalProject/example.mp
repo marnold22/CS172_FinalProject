@@ -1,4 +1,5 @@
 move dog right
+jump ball
 move dog right
 move dog right
 move dog right

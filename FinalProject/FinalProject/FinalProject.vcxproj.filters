@@ -44,6 +44,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="example.txt" />
+    <Text Include="example.mp" />
   </ItemGroup>
 </Project>

@@ -17,6 +17,7 @@ public:
 	void setUp();
 	void update();
 	bool isOverlap(int x1, int y1, int x2, int y2);
+	bool isOutside(int x1, int y1);
 };
 
 #endif _SCREEN_

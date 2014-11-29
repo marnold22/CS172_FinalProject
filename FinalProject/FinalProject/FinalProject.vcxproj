@@ -91,7 +91,7 @@
     <ClInclude Include="Screen.h" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="example.txt" />
+    <Text Include="example.mp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

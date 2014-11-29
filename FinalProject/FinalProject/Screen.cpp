@@ -70,3 +70,10 @@ bool Screen::isOverlap(int x1, int y1, int x2, int y2)
 		return true;
 	return false;
 }
+
+bool Screen::isOutside(int x1, int y1)
+{
+	if (x1 < 0 || x1 > 9 || y1 < 0 || y1 > 9)
+		return true;
+	return false;
+}

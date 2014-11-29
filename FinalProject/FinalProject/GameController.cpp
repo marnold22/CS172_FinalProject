@@ -95,6 +95,39 @@ void GameController::runInstructions(const vector<string>& words)
 				i++;
 			}
 		}
+		else if (words[i] == "jump")
+		{
+			if (words[i + 1] == "ball")
+			{
+				//check for ball to the right or left
+				for (int j = -1; j < 2; j += 2)
+				{
+					if (screen.isOverlap(screen.dog.getXPos() + j, screen.dog.getYPos(), screen.ball.getXPos(), screen.ball.getYPos()) && !screen.isOutside(screen.dog.getXPos() + (j*2), screen.dog.getYPos()))
+					{
+						screen.dog.setXPos(screen.dog.getXPos() + (j*2));
+						j += 1000;
+					}
+				}
+				//check for ball above or below
+				for (int j = -1; j < 2; j += 2)
+				{
+					if (screen.isOverlap(screen.dog.getXPos(), screen.dog.getYPos() + j, screen.ball.getXPos(), screen.ball.getYPos()) && !screen.isOutside(screen.dog.getXPos(), screen.dog.getYPos() + (j * 2)))
+					{
+						screen.dog.setYPos(screen.dog.getYPos() + (j * 2));
+						j += 1000;
+					}
+				}
+				i += 2;
+				screen.update();
+				cout << "jump ball" << endl;
+				std::this_thread::sleep_for(std::chrono::milliseconds(waitTime)); //wait
+			}
+			else
+			{
+				cout << "Could not understand command." << endl;
+				i++;
+			}
+		}
 		else
 		{
 			cout << "Could not understand command. " << endl;
