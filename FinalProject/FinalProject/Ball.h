@@ -7,7 +7,7 @@ using namespace std;
 
 class Ball : public Actor
 {
-
+	
 };
 
 #endif _BALL_

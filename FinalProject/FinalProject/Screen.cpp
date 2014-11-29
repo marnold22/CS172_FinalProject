@@ -11,10 +11,24 @@ void Screen::setUp()
 			coord[i][j] = ' ';
 		}
 	}
+	dog.setXPos(4);
+	dog.setYPos(5);
+	ball.setXPos(6);
+	ball.setYPos(5);
 }
 
 void Screen::update()
 {
+	for (int i = 0; i < 10; i++)
+	{
+		for (int j = 0; j < 10; j++)
+		{
+			coord[i][j] = ' ';
+		}
+	}
+	
+	coord[dog.getXPos()][dog.getYPos()] = 'D';
+	coord[ball.getXPos()][ball.getYPos()] = 'O';
 	
 	cout << "   ___________________________________________________________" << endl;
 	cout << "  |     |     |     |     |     |     |     |     |     |     |" << endl;

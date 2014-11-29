@@ -1,4 +1,4 @@
-﻿Build started 11/28/2014 4:05:29 PM.
+﻿Build started 11/28/2014 4:20:36 PM.
      1>Project "C:\Users\Patrick Herbert\Documents\GitHub\CS172_FinalProject\FinalProject\FinalProject\FinalProject.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          E:\Visual Studio 2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Screen.cpp
@@ -15,4 +15,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.89
+Time Elapsed 00:00:00.92
