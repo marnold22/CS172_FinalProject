@@ -9,11 +9,15 @@ using namespace std;
 class Screen
 {
 private:
-	Dog dog;
-	Ball ball;
+	char coord[10][10];
 
 public:
+	Dog dog;
+	Ball ball;
+	void setUp();
 	void update();
+	bool isOverlap(int x1, int y1, int x2, int y2);
+	bool isOutside(int x1, int y1);
 };
 
 #endif _SCREEN_

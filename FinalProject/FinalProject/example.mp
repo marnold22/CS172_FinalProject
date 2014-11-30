@@ -1,0 +1,25 @@
+move dog right
+jump ball
+move dog right
+move dog right
+move dog right
+move dog right
+move dog right
+move dog right
+move dog right
+move dog right
+move dog right
+move dog down
+move dog down
+move dog down
+move dog down
+move dog left
+move dog left
+move dog left
+move dog left
+move dog left
+move dog up
+move dog up
+move dog up
+move dog up
+move dog up
