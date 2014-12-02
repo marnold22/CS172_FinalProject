@@ -82,6 +82,7 @@
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Dog.cpp" />
     <ClCompile Include="Screen.cpp" />
+    <ClCompile Include="GameControllerContinued.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Actor.h" />
