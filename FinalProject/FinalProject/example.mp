@@ -23,3 +23,7 @@ move dog up
 move dog up
 move dog up
 move dog up
+move ball up
+move ball down
+move ball left
+move ball right
