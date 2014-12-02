@@ -83,6 +83,19 @@ void GameController::runInstructions(const vector<string>& words)
 					cout << "move dog right" << endl;
 					std::this_thread::sleep_for(std::chrono::milliseconds(waitTime)); //wait
 				}
+
+				else if (words[i + 2] == "UpDiagRight")
+				{
+					if (screen.dog.getXPos() != 9 && screen.dog.getYPos() != 9 && !screen.isOverlap(screen.dog.getXPos() + 1, screen.dog.getYPos() + 1, screen.ball.getXPos(), screen.ball.getYPos()))
+						screen.dog.setXPos(screen.dog.getXPos() + 1);
+						screen.dog.setYPos(screen.dog.getYPos() + 1);
+						i += 3;
+						screen.update();
+						cout << "move dog up-diagnol right" << endl;
+						std::this_thread::sleep_for(std::chrono::milliseconds(waitTime)); //wait
+				}
+
+				
 				else
 				{
 					cout << "Could not understand command." << endl;
