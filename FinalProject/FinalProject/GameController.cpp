@@ -88,10 +88,10 @@ void GameController::runInstructions(const vector<string>& words)
 					cout << "Could not understand command." << endl;
 					i++;
 				}
-			
-			
-
 			}
+			//////////////////////
+			
+			/////////////////////////////////////////
 			else
 			{
 				cout << "Could not understand command." << endl;

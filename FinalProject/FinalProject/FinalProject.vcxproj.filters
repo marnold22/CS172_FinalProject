@@ -17,7 +17,7 @@
     <ClCompile Include="Screen.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
-    <ClCompile Include="GameControllerContinued.cpp">
+    <ClCompile Include="GameControllerTemporary.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
   </ItemGroup>
