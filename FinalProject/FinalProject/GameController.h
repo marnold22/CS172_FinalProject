@@ -19,6 +19,23 @@ public:
 	int dogGetYPos(Actor a);
 	void dogSetXPos(Actor a, int newX);
 	void dogSetYPos(Actor a, int newY);
+
+	void moveDogLeft();
+	void moveDogRight();
+	void moveDogUp();
+	void moveDogDown();
+
+	void moveDogUpDiagLeft();
+	void moveDogUpDiagRight();
+	void moveDogDownDiagLeft();
+	void moveDogDownDiagRight();
+
+	void jumpBall();
+
+	void moveBallLeft();
+	void moveBallRight();
+	void moveBallUp();
+	void moveBallDown();
 };
 
 #endif _GAMECONTROLLER_
