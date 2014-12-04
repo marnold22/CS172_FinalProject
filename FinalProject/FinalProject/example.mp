@@ -1,6 +1,5 @@
-move dog right
+move dog left
 jump ball
 move ball up
-move ball down
-move ball left
-move ball right
+move dog UpDiagRight
+move dog DownDiagLeft
