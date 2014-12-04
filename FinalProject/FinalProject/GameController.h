@@ -36,6 +36,13 @@ public:
 	void moveBallRight();
 	void moveBallUp();
 	void moveBallDown();
+
+	void moveBallUpDiagRight();
+	void moveBallUpDiagLeft();
+	void moveBallDownDiagRight();
+	void moveBallDownDiagLeft();
+
+
 };
 
 #endif _GAMECONTROLLER_
