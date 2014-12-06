@@ -102,13 +102,11 @@ void GameController::runInstructions(const vector<string>& words)
 				{
 					moveBallUp();
 					i += 3;
-					
 				}
 				else if (words[i + 2] == "down")
 				{
 					moveBallDown();
-					i += 3;
-					
+					i += 3;	
 				}
 				else if (words[i + 2] == "left")
 				{
@@ -118,48 +116,31 @@ void GameController::runInstructions(const vector<string>& words)
 				else if (words[i + 2] == "right")
 				{
 					moveBallRight();
-					i += 3;
-					
+					i += 3;				
 				}
 
 				else if (words[i + 2] == "UpDiagRight")
 				{
 					moveBallUpDiagLeft();
-					i += 3;
-					
+					i += 3;	
 				}
 
 				else if (words[i + 2] == "UpDiagLeft")
 				{
-					if (screen.ball.getXPos() != 0 && screen.ball.getYPos() != 9 && !screen.isOverlap(screen.ball.getXPos() - 1, screen.ball.getYPos() + 1, screen.dog.getXPos(), screen.dog.getYPos()))
-						screen.ball.setXPos(screen.ball.getXPos() - 1);
-					screen.ball.setYPos(screen.ball.getYPos() + 1);
-					i += 3;
-					screen.update();
-					cout << "move ball up-diagnol right" << endl;
-					std::this_thread::sleep_for(std::chrono::milliseconds(waitTime)); //wait
+					moveBallUpDiagLeft();
+					i += 3;			
 				}
 
 				else if (words[i + 2] == "DownDiagRight")
 				{
-					if (screen.ball.getXPos() != 9 && screen.ball.getYPos() != 0 && !screen.isOverlap(screen.ball.getXPos() + 1, screen.ball.getYPos() - 1, screen.dog.getXPos(), screen.dog.getYPos()))
-						screen.ball.setXPos(screen.ball.getXPos() + 1);
-					screen.ball.setYPos(screen.ball.getYPos() - 1);
-					i += 3;
-					screen.update();
-					cout << "move ball up-diagnol right" << endl;
-					std::this_thread::sleep_for(std::chrono::milliseconds(waitTime)); //wait
+					moveBallDownDiagRight();
+					i += 3;		
 				}
 
 				else if (words[i + 2] == "DownDiagLeft")
 				{
-					if (screen.ball.getXPos() != 0 && screen.ball.getYPos() != 0 && !screen.isOverlap(screen.ball.getXPos() - 1, screen.ball.getYPos() - 1, screen.dog.getXPos(), screen.dog.getYPos()))
-						screen.ball.setXPos(screen.ball.getXPos() - 1);
-					screen.ball.setYPos(screen.ball.getYPos() - 1);
-					i += 3;
-					screen.update();
-					cout << "move ball up-diagnol right" << endl;
-					std::this_thread::sleep_for(std::chrono::milliseconds(waitTime)); //wait
+					moveBallDownDiagLeft();
+					i += 3;			
 				}
 				else
 				{
@@ -335,13 +316,28 @@ void GameController::moveBallUpDiagRight()
 }
 void GameController::moveBallUpDiagLeft()
 {
-
+	if (screen.ball.getXPos() != 0 && screen.ball.getYPos() != 9 && !screen.isOverlap(screen.ball.getXPos() - 1, screen.ball.getYPos() + 1, screen.dog.getXPos(), screen.dog.getYPos()))
+		screen.ball.setXPos(screen.ball.getXPos() - 1);
+	screen.ball.setYPos(screen.ball.getYPos() + 1);
+	screen.update();
+	cout << "move ball up-diagnol right" << endl;
+	std::this_thread::sleep_for(std::chrono::milliseconds(waitTime)); //wait
 }
 void GameController::moveBallDownDiagRight()
 {
-
+	if (screen.ball.getXPos() != 9 && screen.ball.getYPos() != 0 && !screen.isOverlap(screen.ball.getXPos() + 1, screen.ball.getYPos() - 1, screen.dog.getXPos(), screen.dog.getYPos()))
+		screen.ball.setXPos(screen.ball.getXPos() + 1);
+	screen.ball.setYPos(screen.ball.getYPos() - 1);
+	screen.update();
+	cout << "move ball up-diagnol right" << endl;
+	std::this_thread::sleep_for(std::chrono::milliseconds(waitTime)); //wait
 }
 void GameController::moveBallDownDiagLeft()
 {
-
+	if (screen.ball.getXPos() != 0 && screen.ball.getYPos() != 0 && !screen.isOverlap(screen.ball.getXPos() - 1, screen.ball.getYPos() - 1, screen.dog.getXPos(), screen.dog.getYPos()))
+		screen.ball.setXPos(screen.ball.getXPos() - 1);
+	screen.ball.setYPos(screen.ball.getYPos() - 1);
+	screen.update();
+	cout << "move ball up-diagnol right" << endl;
+	std::this_thread::sleep_for(std::chrono::milliseconds(waitTime)); //wait
 }
