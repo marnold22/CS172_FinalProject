@@ -2,6 +2,8 @@
 #include <iostream>
 using namespace std;
 
+//Places blank spaces in all screen coordinates
+//and sets Dog and Ball initial positions
 void Screen::setUp()
 {
 	for (int i = 0; i < 10; i++)
@@ -17,6 +19,7 @@ void Screen::setUp()
 	ball.setYPos(5);
 }
 
+//"cout"s the screen with the Dog and Ball at their current locations
 void Screen::update()
 {
 	for (int i = 0; i < 10; i++)
@@ -64,6 +67,8 @@ void Screen::update()
 	cout << "     0     1     2     3     4     5     6     7     8     9  " << endl;
 }
 
+//Used to check if the Dog and Ball's positions are the same
+//True = Yes, they are overlapping
 bool Screen::isOverlap(int x1, int y1, int x2, int y2)
 {
 	if (x1 == x2 && y1 == y2)
@@ -71,6 +76,7 @@ bool Screen::isOverlap(int x1, int y1, int x2, int y2)
 	return false;
 }
 
+//Will this location cause the Dog or Ball to be outside of the Screen's possible coordinates
 bool Screen::isOutside(int x1, int y1)
 {
 	if (x1 < 0 || x1 > 9 || y1 < 0 || y1 > 9)
