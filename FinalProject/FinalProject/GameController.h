@@ -10,8 +10,8 @@ using namespace std;
 class GameController
 {
 private:
-	//900 milliseconds
-	int waitTime = 900;
+	//determines length of pause between command
+	int waitTime = 3000;
 public:
 	Screen screen;
 	
@@ -19,13 +19,6 @@ public:
 	void readFile();
 	//takes in a vector<string> and runs commands based on the words
 	void runInstructions(const vector<string>& words);
-	
-	//REMOVE THIS
-	//int actorGetXPos(Actor a);
-	//int dogGetYPos(Actor a);
-	//REMOVE THIS
-	//void dogSetXPos(Actor a, int newX);
-	//void dogSetYPos(Actor a, int newY);
 
 	//functions for moving Dog standard directions
 	void moveDogLeft();
